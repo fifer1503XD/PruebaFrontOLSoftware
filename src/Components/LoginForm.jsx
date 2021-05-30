@@ -16,7 +16,7 @@ const LoginForm = () => {
             <form className="LoginForm" onSubmit={HandleSubmit}>
                 <div className="tituloFormLogin mb-5"> Inicio de sesión</div>
             <div className="mb-2 mt-3">
-                <input type="email" name="correo"className="form-control inputForm" id="exampleInputEmail1" aria-describedby="emailHelp"  onChange={ handleInputChangePost }placeholder="&#xf007;  Usuario"/>
+                <input type="email" name="correo"className="form-control inputForm" id="exampleInputEmail1" aria-describedby="emailHelp"  onChange={ handleInputChangePost }placeholder="Usuario"/>
             </div>
             <div className="mb-4">
                 
