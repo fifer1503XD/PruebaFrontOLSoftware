@@ -10,5 +10,17 @@
 .formPostUser{
     display: flex;
     flex-wrap: wrap;  
-    padding: 3%;
+}
+
+.modalEdit{
+    width: 100%;
+}
+modal-dialog{
+    width: 55vw;
+}
+
+.inputForm2{
+    height: 12vh;
+    width: 45%;
+    margin-left: 3%;
 }

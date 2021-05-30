@@ -22,35 +22,35 @@ const PostUser = (props) => {
         {show ? <form className="formPostUser" onSubmit={HandleSubmit}>
        
           
-            <div className="m-1 ">
+            <div className="inputForm2">
                 <label for="Nombres" className="form-label">Nombres</label>
                 <input name="nombres" type="text" className="form-control"  value={ nombres } id="Nombres"  onChange={ handleInputChangePost }/>
             </div>
-            <div className="m-1">
+            <div className="inputForm2">
                 <label for="Apellidos" className="form-label">Apellidos</label>
                 <input name="apellidos" type="text" className="form-control" value={  apellidos }  onChange={ handleInputChangePost }/>
             </div>
-            <div className="m-1">
+            <div className="inputForm2">
                 <label for="Identificacion" className="form-label">Identificacion</label>
                 <input name="identificacion" type="text" className="form-control" value={  identificacion }id="identificacion"  onChange={ handleInputChangePost }/>
             </div>
-            <div className="m-1">
+            <div className="inputForm2">
                 <label for="Rol" className="form-label">Rol</label>
                 <input name="rol" type="text" className="form-control" id="Rol" value={  rol }  onChange={ handleInputChangePost}/>
             </div>
-            <div className="m-1">
+            <div className="inputForm2">
                 <label for="Estado" className="form-label">Estado</label>
                 <input name="estado" type="text" className="form-control" id="Estado" value={ estado } onChange={ handleInputChangePost }/>
             </div>
-            <div className="m-1">
+            <div className="inputForm2">
                 <label for="Telefono" className="form-label">Telefono</label>
                 <input name="telefono" type="text" className="form-control" id="Telefono"value={ telefono}onChange={ handleInputChangePost }/>
             </div>
-            <div className="m-1 mb-3">
+            <div className=" inputForm2 mb-3">
                 <label for="Email" className="form-label">Email</label>
                 <input name="correo" type="Email" className="form-control" id="Email" value={ correo}onChange={ handleInputChangePost }/>
             </div>
-            <div className="m-1 mb-3">
+            <div className=" inputForm2 mb-3">
                 <label for="password" className="form-label">Contraseña</label>
                 <input name="password" type="password" className="form-control" id="password" value={ password}onChange={ handleInputChangePost }/>
             </div>
