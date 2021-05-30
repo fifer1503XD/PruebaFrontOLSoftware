@@ -1,7 +1,7 @@
 import FilterUser from "../Components/FilterUser"
 import UserInfo from "../Components/UserInfo"
 import React,{useContext} from "react";
-import Navbar from "../Components/sideBard/Navbar";
+// import Navbar from "../Components/sideBard/Navbar";
 import { UserContext } from "../Hooks/UserContext";
 import './HomeContainer.css'
 
@@ -11,7 +11,7 @@ const HomeContainer = () => {
     return (
         <div className='col d-flex flex-wrap '>
             <div className={sidebar ? '   navOn col-sm-12' : ' navOff col-sm-12 '}>
-            <Navbar/>
+            {/* <Navbar/> */}
             </div>
             <div className={sidebar ? 'userInfo col-md-8 col-sm-12 white' : 'userInfo col-md-9 col-sm-12 white'}>
             <UserInfo/>
