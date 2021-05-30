@@ -49,7 +49,7 @@ body{
 
 .nav-text {
   display: flex;
-  justify-content: start;
+  justify-content: mixed;
   align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
@@ -76,14 +76,6 @@ body{
   width: 100%;
 }
 
-.navbar-toggle {
-  background-color: #384696;
-  width: 100%;
-  height: 80px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
 
 span {
   margin-left: 16px;
@@ -93,4 +85,13 @@ span {
 .titleBar{
   margin-left: 15%;
  color: white;
+}
+
+.navbar-toggle {
+  background-color: #384696;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  /* justify-content: start;
+  align-items: center; */
 }

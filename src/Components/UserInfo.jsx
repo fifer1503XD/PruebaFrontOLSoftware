@@ -23,13 +23,12 @@ const UserInfo = () => {
         docs.push({ ...doc.data(), id: doc.id });
       });
       setDataUsers(docs);
-      console.log(dataUsers)
     
     })
   }
   useEffect(() => {
    getUsers()
-  }, []);
+  }, [dataUsers]);
  
   
  
@@ -67,7 +66,7 @@ const UserInfo = () => {
   && users.identificacion.includes(dataSearch.identificacion))
   .map((user)=>{
       const {nombres,apellidos,identificacion,rol,estado,telefono,correo}=user
-      return(<tr>
+      return(<tr key={identificacion}>
       <td>{nombres}</td>
       <td>{apellidos}</td>
       <td>{identificacion}</td>

@@ -8,17 +8,15 @@ import "./Modals.css"
 import { UserContext } from '../Hooks/UserContext';
 const ModalEditUser = (props) => {
  
+
     const {userId} =props
-    console.log(userId)
     const [show, setShow] = useState(false);
     const handleClose = () => {setShow(false)}
-    const {currentUser, setcurrentUser} = useContext(UserContext);
+    const { setcurrentUser} = useContext(UserContext);
     const editUser = async (id) => {
-      console.log(id)
-      setShow(true)
       const doc = await db.collection("users").doc(id).get();
       setcurrentUser({ ...doc.data() });
-      console.log(currentUser)
+      setShow(true)
     }
     return ( 
         <>

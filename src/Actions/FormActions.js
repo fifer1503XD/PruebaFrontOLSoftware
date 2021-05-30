@@ -47,18 +47,14 @@ export const useForm = (  ) => {
             ...newUser, 
             [ target.name ]: target.value
         });
-        console.log(newUser)
+        
     }
     
 
     const PostNewUser = async ()=>{
-        await db.collection("users").doc().set(newUser);
-        
-        console.log('nueva tarea agregada')
-       
+        await db.collection("users").doc().set(newUser);       
     } 
     const EditUser= async(id)=>{
-        console.log(id)
         await db.collection("users").doc(id).update(newUser);
         setcurrentUser("");
      }
@@ -69,7 +65,6 @@ export const useForm = (  ) => {
         .get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 docs.push({ ...doc.data(), id: doc.id });
-              console.log(doc.id, " => ", doc.data());
             });
            
            
@@ -80,7 +75,7 @@ export const useForm = (  ) => {
         });
         
         if( newUser.correo && docs[0]){
-            if (newUser.correo == docs[0].correo && newUser.password ===docs[0].password){
+            if (newUser.correo === docs[0].correo && newUser.password ===docs[0].password){
                 setcurrentUser(docs)
                 setTimeout(() => { (history.push("/app"))}, 2000); 
                

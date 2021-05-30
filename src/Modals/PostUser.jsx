@@ -15,7 +15,6 @@ const PostUser = (props) => {
      });
     
      const{handleClose, userId}=props
-     console.log(userId)
     const [show] = useState(true);
     return ( 
         <div>

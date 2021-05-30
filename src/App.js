@@ -1,9 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React,{useState} from 'react'
 import HomeContainer from './Containers/HomeContainer';
 import { UserContext} from './Hooks/UserContext';
-import { Users } from './Data/User';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Login from './Components/login';
 
@@ -11,7 +10,7 @@ import Login from './Components/login';
 function App() {
   const [sidebar, setsidebar] = useState(false);
   const [currentUser, setcurrentUser] = useState();
-  const [dataUsers, setDataUsers] = useState(Users);
+  const [dataUsers, setDataUsers] = useState([]);
   const [activeSession, setactiveSession] = useState();
   const [dataSearch, setDataSearch] = useState(   {
     nombres:"",
