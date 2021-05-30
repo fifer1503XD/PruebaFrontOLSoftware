@@ -1,12 +1,11 @@
 import React,{useEffect, useContext} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit,faTrash, faTruckLoading } from '@fortawesome/free-solid-svg-icons'
+import { faTrash} from '@fortawesome/free-solid-svg-icons'
 import { UserContext } from "../Hooks/UserContext";
 import './UserInfo.css'
 import ModalNewUser from "../Modals/ModalNewUser";
 import ModalEditUser from "../Modals/ModalEditUser";
 import {projectFirestore as db} from '../firebase'
-import { toast } from "react-toastify";
 const UserInfo = () => {
   const {dataUsers,setDataUsers} = useContext(UserContext);
   const {dataSearch} = useContext(UserContext);
@@ -30,7 +29,7 @@ const UserInfo = () => {
   }
   useEffect(async() => {
    getUsers()
-  }, []);
+  }, [dataUsers]);
  
   
  
@@ -79,7 +78,6 @@ const UserInfo = () => {
       <td>
           <div>
             <ModalEditUser userId={user.id}/>
-          {/* <FontAwesomeIcon  onClick={()=>{editUser(user.id)}}icon={faEdit}/>  */}
           <FontAwesomeIcon onClick={()=>{deleteUser(user.id)}} icon={faTrash}/>
           </div>
       </td>

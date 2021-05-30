@@ -7,7 +7,7 @@ import './HomeContainer.css'
 
 const HomeContainer = () => {
    
-    const {sidebar,setsidebar} = useContext(UserContext);
+    const {sidebar} = useContext(UserContext);
     return (
         <div className='col d-flex flex-wrap '>
             <div className={sidebar ? '   navOn col-sm-12' : ' navOff col-sm-12 '}>

@@ -5,7 +5,6 @@ import {projectFirestore as db} from '../firebase'
 export const useForm = (  ) => {
     let history = useHistory();
     const {currentUser, setcurrentUser} = useContext(UserContext);
-    const {activeSession, setactiveSession} =useContext(UserContext);
     const [newUser, setnewUser] = useState(currentUser ? currentUser: {
         nombres:"",
         apellidos:"",
@@ -17,7 +16,6 @@ export const useForm = (  ) => {
         password:""
     });
     
-    const {dataUsers,setDataUsers} = useContext(UserContext);
     const {dataSearch,setDataSearch} = useContext(UserContext);
   
     

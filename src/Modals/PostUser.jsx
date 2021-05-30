@@ -1,10 +1,9 @@
 import React, {useState, useContext}from 'react';
 import { useForm } from '../Actions/FormActions';
 import { UserContext } from '../Hooks/UserContext';
-import ModalEditUser from './ModalEditUser';
 const PostUser = (props) => {
-    const {currentUser, setcurrentUser} = useContext(UserContext);
-    const [handleInputChange,HandleSubmit,dataSearch,handleReset,handleInputChangePost,{nombres,apellidos,identificacion,rol,estado,telefono,correo,password},PostNewUser,EditUser] = useForm({
+    const {currentUser} = useContext(UserContext);
+    const [,HandleSubmit,,,handleInputChangePost,{nombres,apellidos,identificacion,rol,estado,telefono,correo,password},PostNewUser,EditUser] = useForm({
         nombres:"",
         apellidos:"",
         identificacion:"",
@@ -17,7 +16,7 @@ const PostUser = (props) => {
     
      const{handleClose, userId}=props
      console.log(userId)
-    const [show, setShow] = useState(true);
+    const [show] = useState(true);
     return ( 
         <div>
         {show ? <form className="formPostUser" onSubmit={HandleSubmit}>

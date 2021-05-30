@@ -4,7 +4,7 @@ import LoginForm from './LoginForm'
 import Loader from './sideBard/Preloader/Loader'
 import React,{useContext} from 'react';
 const Login = () => {
-    const {currentUser, setcurrentUser} = useContext(UserContext);
+    const {currentUser} = useContext(UserContext);
     return (
         <>
         <div className="imgLogin">

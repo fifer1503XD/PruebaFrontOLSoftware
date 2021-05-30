@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
-import {Modal,Button} from 'react-bootstrap'
+import {Modal} from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEdit,faTrash, faTruckLoading } from '@fortawesome/free-solid-svg-icons'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
 import PostUser from './PostUser';
 import {projectFirestore as db} from '../firebase'
 import "./Modals.css"
@@ -12,7 +12,6 @@ const ModalEditUser = (props) => {
     console.log(userId)
     const [show, setShow] = useState(false);
     const handleClose = () => {setShow(false)}
-    const handleShow = () => setShow(true)
     const {currentUser, setcurrentUser} = useContext(UserContext);
     const editUser = async (id) => {
       console.log(id)

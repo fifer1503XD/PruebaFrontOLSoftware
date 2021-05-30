@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import { Link,Router } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import * as IoIcons from 'react-icons/io';
