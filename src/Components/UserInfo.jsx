@@ -27,9 +27,9 @@ const UserInfo = () => {
     
     })
   }
-  useEffect(async() => {
+  useEffect(() => {
    getUsers()
-  }, [dataUsers]);
+  }, []);
  
   
  
@@ -42,7 +42,7 @@ const UserInfo = () => {
       <span>Usuarios existentes</span> 
       <ModalNewUser/>
     </div>
-        <table class="table tableUser flex-wrap">
+        <table className="table tableUser flex-wrap">
   <thead>
      
     <tr>
