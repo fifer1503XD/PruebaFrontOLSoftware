@@ -1,0 +1,14 @@
+.btnNewUser{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.btnAceptar{
+   margin: 2%;
+}
+.formPostUser{
+    display: flex;
+    flex-wrap: wrap;  
+    padding: 3%;
+}

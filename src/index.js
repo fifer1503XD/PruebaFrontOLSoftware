@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import './firebase'
+<script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
 ReactDOM.render(
   <React.StrictMode>
     <App />
