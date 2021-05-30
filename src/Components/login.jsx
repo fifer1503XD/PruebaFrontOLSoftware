@@ -1,7 +1,7 @@
 import { UserContext } from '../Hooks/UserContext'
 import './Login.css'
 import LoginForm from './LoginForm'
-import Loader from './sideBard/Preloader/Loader'
+import Loader from './Preloader/Loader'
 import React,{useContext} from 'react';
 const Login = () => {
     const {currentUser} = useContext(UserContext);
