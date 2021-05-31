@@ -2,7 +2,7 @@ body{
     background-color: white;
 }
 .effectCircle{
-    clip-path: circle(52.9% at 45% 5%);
+    clip-path: circle(62.9% at 45% 5%);
     margin-left: -3%;
 }
 
